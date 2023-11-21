@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 def safe_function(fct, *args):
-    """
-    Function that executes a function safely. 
-    """
+    """Function that executes a function safely."""
     import sys
     try:
         res = fct(*args)
