@@ -5,7 +5,7 @@
 class Square:
     """ A class that defines a square """
 
-    def __int__(self, size=0):
+    def __init__(self, size=0):
         """ Initialzing a square object. """
         if type(size) is not int:
             raise TypeError("size must be an integer")
