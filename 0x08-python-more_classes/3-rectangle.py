@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Real definition of a rectangle"""
+""" String representation """
 
 
 class Rectangle:
