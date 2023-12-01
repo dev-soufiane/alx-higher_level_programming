@@ -38,12 +38,12 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(positive_end_list), 50)
 
     def test_positive_middle(self):
-        """Test a list with all positive numbers and the maximum in the middle."""
+        """Test a list with all positive numbers and the max in the middle."""
         positive_middle_list = [2, 10, 8, 360, 14, 50]
         self.assertEqual(max_integer(positive_middle_list), 360)
 
     def test_positive_beginning(self):
-        """Test a list with all positive numbers and the maximum at the beginning."""
+        """Test all positive numbers and the max at the beginning."""
         positive_beginning_list = [200, 10, 8, 36, 14, 50]
         self.assertEqual(max_integer(positive_beginning_list), 200)
 
