@@ -12,4 +12,4 @@ def load_from_json_file(filename):
     """
     with open(filename, "r", encoding="utf-8") as jf:
         jf_content = jf.read()
-        json.loads(jf_content)
+    return json.loads(jf_content)
