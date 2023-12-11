@@ -4,15 +4,15 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ defines a class Rectangle. """
+    """ Defines a class Rectangle. """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initializes a new Rectangle object. """
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
 
     @property
     def width(self):
@@ -69,3 +69,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """ Returns the area of the Rectangle. """
+        return self.width * self.height
